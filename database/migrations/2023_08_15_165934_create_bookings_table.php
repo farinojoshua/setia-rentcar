@@ -22,9 +22,9 @@ return new class extends Migration
             $table->string('payment_status')->default('pending');
             $table->string('payment_url')->nullable();
             $table->integer('total_price');
-            $table->date('order_date');
             $table->foreignId('car_id')->constrained();
             $table->foreignId('user_id')->constrained();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

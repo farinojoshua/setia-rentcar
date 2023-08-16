@@ -20,15 +20,13 @@ class Booking extends Model
         'payment_status',
         'payment_url',
         'total_price',
-        'order_date',
         'car_id',
         'user_id'
     ];
 
-    protected $dates = [
-        'start_date',
-        'end_date',
-        'order_date'
+    protected $casts = [
+        'start_date' => 'datetime',
+        'end_date'=> 'datetime',
     ];
 
     public function car()

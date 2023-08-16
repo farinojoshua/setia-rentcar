@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="flex items-center shrink-0">
                     <a href="{{ route('admin.dashboard') }}">
-                        <x-application-mark class="block w-auto h-9" />
+                        <img src="/svgs/logo1.svg" alt="logo" />
                     </a>
                 </div>
 
@@ -17,6 +17,12 @@
                     </x-nav-link>
                     <x-nav-link href="{{ route('admin.types.index') }}" :active="request()->routeIs('admin.types.index')">
                         {{ __('Tipe') }}
+                    </x-nav-link>
+                    <x-nav-link href="{{ route('admin.cars.index') }}" :active="request()->routeIs('admin.cars.index')">
+                        {{ __('Mobil') }}
+                    </x-nav-link>
+                    <x-nav-link href="{{ route('admin.bookings.index') }}" :active="request()->routeIs('admin.bookings.index')">
+                        {{ __('Transaksi') }}
                     </x-nav-link>
                 </div>
             </div>
@@ -147,6 +153,12 @@
             </x-responsive-nav-link>
             <x-responsive-nav-link href="{{ route('admin.types.index') }}" :active="request()->routeIs('admin.types.index')">
                 {{ __('Tipe') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('admin.cars.index') }}" :active="request()->routeIs('admin.cars.index')">
+                {{ __('Mobil') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('admin.bookings.index') }}" :active="request()->routeIs('admin.bookings.index')">
+                {{ __('Transaksi') }}
             </x-responsive-nav-link>
         </div>
 

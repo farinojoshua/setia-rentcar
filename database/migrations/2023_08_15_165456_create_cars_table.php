@@ -20,6 +20,7 @@ return new class extends Migration
             $table->text('features');
             $table->integer('price');
             $table->text('photos');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

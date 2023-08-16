@@ -39,7 +39,7 @@
                      class="block w-full px-4 py-3 leading-tight text-gray-700 bg-gray-200 border border-gray-200 rounded appearance-none focus:outline-none focus:bg-white focus:border-gray-500"
                      id="grid-last-name" type="text" placeholder="Nama" required>
               <div class="mt-2 text-sm text-gray-500">
-                Nama brands. Contoh: Brand 1, Brand 2, Brand 3, dsb. Wajib diisi. Maksimal 255 karakter.
+                Nama Tipe. Contoh: SUV, MVP, Sedan, dsb. Wajib diisi. Maksimal 255 karakter.
               </div>
             </div>
           </div>
