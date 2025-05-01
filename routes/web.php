@@ -40,7 +40,7 @@ Route::name('front.')->group(function () {
         Route::post('/katalog/{slug}/checkout', [FrontCheckoutController::class, 'store'])->name('catalog.checkout.store');
         Route::get('/payment/{bookingId}', [FrontPaymentController::class, 'index'])->name('payment');
         Route::get('/payment/{bookingId}/detail', [FrontPaymentController::class, 'update'])->name('payment.update');
-        Route::get('/payment/success', [PaymentController::class, 'success'])->name('payment.success');
+        Route::get('/payment/success', [FrontPaymentController::class, 'success'])->name('payment.success');
     });
 });
 
